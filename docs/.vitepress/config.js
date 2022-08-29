@@ -1,10 +1,10 @@
 /**
  * @Descripttion: 
- * @version: 
+ * @version: 1.0.0
  * @Author: Nick.
  * @Date: 2022-08-29 13:21:19
  * @LastEditors: Nick.
- * @LastEditTime: 2022-08-29 16:46:53
+ * @LastEditTime: 2022-08-29 17:00:44
  */
 export default {
     lang: 'zh-CN',
@@ -38,7 +38,7 @@ export default {
         },
         footer: {
             message: '努力让技术创造价值',
-            copyright: '<a style="text-decoration: none;color: #000;" target="_blank" href="https://beian.miit.gov.cn/">豫ICP备2021031152号</a> Copyright © 2022 NickNiu.'
+            copyright: '<a class="message" target="_blank" href="https://beian.miit.gov.cn/">豫ICP备2021031152号</a>  Copyright © 2022 NickNiu.'
         }
     }
   }
