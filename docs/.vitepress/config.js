@@ -4,12 +4,12 @@
  * @Author: Nick.
  * @Date: 2022-08-29 13:21:19
  * @LastEditors: Nick.
- * @LastEditTime: 2022-08-29 16:23:10
+ * @LastEditTime: 2022-08-29 16:46:53
  */
 export default {
     lang: 'zh-CN',
     title: '基石编程笔记',
-    titleTemplate: '让习惯成为自然',
+    titleTemplate: '努力让技术创造价值',
     description: '记录基石项目诞生开发全过程',
     head: [
         // ico
@@ -30,46 +30,61 @@ export default {
                 faeFilters: ['tags:guide,api']
             }
         },
-        nav: [
-            { text: '基石诞生记', link: '/app/' },
-            { text: '基石PHP', link: '/php/' },
-            { text: 'Arco Pro', link: '/arco_pro/' },
-        ],
+        nav: getNavList(),
         sidebar: {
-            '/app/':[
-                {
-                    text: '系统设计方案',
-                    items: [
-                        // This shows `/guide/index.md` page.
-                        { text: '', link: '/app/' },
-                        // { text: 'One', link: '/guide/one' }, // /guide/one.md
-                        // { text: 'Two', link: '/guide/two' } // /guide/two.md
-                    ]
-                }
-            ],
-            '/php/': [
-                {
-                    text: '',
-                    items: [
-                        { text: '', link: '/php/' },
-                    ]
-                }
-            ],
-            '/arco_pro/': [
-                {
-                    text: 'Acro Pro 二次开发笔记',
-                    items: [
-                        { text: '前言', link: '/arco_pro/' },
-                        { text: '状态管理Pinia', link: '/arco_pro/arco_pro_pinia' },
-                        { text: 'TypeScript', link: '/arco_pro/arco_ts_assignment' }
-                    ]
-                }
-            ]
-          },
+            '/app/': getAppSidebarList(),
+            '/php/': getPhpSidebarList(),
+            '/arco_pro/': getArcoProSidebarList()
+        },
         footer: {
-            message: '<a style="color: #fff" target="_blank" href="https://beian.miit.gov.cn/">豫ICP备2021031152号</a>',
-            copyright: 'Copyright © 2022 NickNiu.'
+            message: '努力让技术创造价值',
+            copyright: '<a style="text-decoration: none;color: #000;" target="_blank" href="https://beian.miit.gov.cn/">豫ICP备2021031152号</a> Copyright © 2022 NickNiu.'
         }
     }
   }
   
+  function getNavList() {
+    return [
+        { text: '基石诞生记', link: '/app/' },
+        { text: '基石PHP', link: '/php/' },
+        { text: 'Arco Pro', link: '/arco_pro/' },
+    ]
+  }
+
+  function getAppSidebarList() {
+    return [
+        {
+            text: '系统设计方案',
+            items: [
+                // This shows `/guide/index.md` page.
+                { text: '', link: '/app/' },
+                // { text: 'One', link: '/guide/one' }, // /guide/one.md
+                // { text: 'Two', link: '/guide/two' } // /guide/two.md
+            ]
+        }
+    ]
+  }
+
+  function getPhpSidebarList() {
+    return [
+        {
+            text: '',
+            items: [
+                { text: '', link: '/php/' },
+            ]
+        }
+    ]
+  }
+
+  function getArcoProSidebarList() {
+    return [
+        {
+            text: 'Acro Pro 二次开发笔记',
+            items: [
+                { text: '前言', link: '/arco_pro/' },
+                { text: '状态管理Pinia', link: '/arco_pro/arco_pro_pinia' },
+                { text: 'TypeScript', link: '/arco_pro/arco_ts_assignment' }
+            ]
+        }
+    ]
+  }
