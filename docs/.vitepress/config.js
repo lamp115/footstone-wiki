@@ -4,14 +4,23 @@
  * @Author: Nick.
  * @Date: 2022-08-29 13:21:19
  * @LastEditors: Nick.
- * @LastEditTime: 2022-08-29 14:42:51
+ * @LastEditTime: 2022-08-29 15:54:13
  */
 export default {
-    outDir:'../wiki',
+    base: '/lamp115/footstone-wiki/',
     lang: 'zh-CN',
     title: '基石编程笔记',
     titleTemplate: '让习惯成为自然',
     description: '记录基石项目诞生开发全过程',
+    head: [
+        // ico
+        ["link", {rel: "icon", href: "/favicon.ico"}],
+        // meta
+        ["meta", {name: "robots", content: "all"}],
+        ["meta", {name: "author", content: "NickNiu"}],
+        ["meta", {name: "keywords", content: "PHP 全栈知识体系, PHP体系, PHP知识体系, PHP框架,PHP详解,PHP学习路线, PHP面试, 知识体系, PHP技术体系, PHP编程, PHP编程指南,PHP开发体系, PHP开发,PHP教程,PHP,PHP数据结构, 算法, 开发基础"}],
+        ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}]
+    ],
     themeConfig: {
         logo: "/logo.png",
         // 展示搜索框
@@ -62,6 +71,6 @@ export default {
             message: '<a style="color: #fff" target="_blank" href="https://beian.miit.gov.cn/">豫ICP备2021031152号</a>',
             copyright: 'Copyright © 2022 NickNiu.'
         }
-    }    
+    }
   }
   
