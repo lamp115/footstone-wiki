@@ -4,10 +4,9 @@
  * @Author: Nick.
  * @Date: 2022-08-29 13:21:19
  * @LastEditors: Nick.
- * @LastEditTime: 2022-08-29 15:54:13
+ * @LastEditTime: 2022-08-29 16:23:10
  */
 export default {
-    base: '/lamp115/footstone-wiki/',
     lang: 'zh-CN',
     title: '基石编程笔记',
     titleTemplate: '让习惯成为自然',
