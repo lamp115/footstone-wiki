@@ -4,7 +4,7 @@
  * @Author: Nick.
  * @Date: 2022-08-29 13:21:19
  * @LastEditors: Nick.
- * @LastEditTime: 2022-08-29 17:00:44
+ * @LastEditTime: 2022-08-30 15:17:15
  */
 export default {
     lang: 'zh-CN',
@@ -24,10 +24,10 @@ export default {
         logo: "/logo.png",
         // 展示搜索框
         algolia: {
-            appKey: '',
-            indexName: '',
+            appKey: 'f4ef70a044b7b37d6c8daffc0e594bce',
+            indexName: 'footstone-wiki',
             searchParameters: {
-                faeFilters: ['tags:guide,api']
+                faeFilters: ['tags:php,app,arco_pro']
             }
         },
         nav: getNavList(),
@@ -54,12 +54,20 @@ export default {
   function getAppSidebarList() {
     return [
         {
-            text: '系统设计方案',
+            text: '系统开篇',
             items: [
-                // This shows `/guide/index.md` page.
-                { text: '', link: '/app/' },
-                // { text: 'One', link: '/guide/one' }, // /guide/one.md
-                // { text: 'Two', link: '/guide/two' } // /guide/two.md
+                { text: '基石的初衷', link: '/app/'}
+            ]
+        },
+        {
+            text: '技术方案',
+            items: [
+                { text: '总体架构', link: '/app/system-structure' },// /app/system-structure.md
+            ]
+        },{
+            text: '关于我们',
+            items: [
+                { text: '个人简历', link: '/app/abort-me.md' }
             ]
         }
     ]
