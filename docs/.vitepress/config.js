@@ -4,7 +4,7 @@
  * @Author: Nick.
  * @Date: 2022-08-29 13:21:19
  * @LastEditors: Nick.
- * @LastEditTime: 2022-08-30 16:28:39
+ * @LastEditTime: 2022-08-30 18:10:49
  */
 export default {
     lang: 'zh-CN',
@@ -23,15 +23,15 @@ export default {
     themeConfig: {
         logo: "/logo.png",
         // 展示搜索框
-        algolia: {
-            appId: 'M9KOQX6ZL7',
-            apiKey: '4b516cc60eebdb39b866d4314a2f1be9',
-            // appKey: '4b516cc60eebdb39b866d4314a2f1be9',
-            indexName: 'footstone-wiki',
-            searchParameters: {
-                // faeFilters: ['tags:php,app,arco_pro']
-            }
-        },
+        // algolia: {
+        //     appId: 'M9KOQX6ZL7',
+        //     apiKey: '4b516cc60eebdb39b866d4314a2f1be9',
+        //     // appKey: '4b516cc60eebdb39b866d4314a2f1be9',
+        //     indexName: 'footstone-wiki',
+        //     searchParameters: {
+        //         // faeFilters: ['tags:php,app,arco_pro']
+        //     }
+        // },
         nav: getNavList(),
         sidebar: {
             '/app/': getAppSidebarList(),
